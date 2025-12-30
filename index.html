@@ -3,88 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Juan Jesús García</title>
+    <title>Juan Garcia - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <header class="hero">
-        <div class="container">
-            <h1>Juan Jesús García</h1>
-            <h2>Estudiante de DAM | Backend & Mobile Dev</h2>
-            <p>Apasionado por crear soluciones robustas con Java y aplicaciones móviles con Flutter.</p>
-            <div class="social-links">
-                <a href="https://github.com/juan-garcia-dev" target="_blank" class="btn">GitHub</a>
-                <a href="#" class="btn-outline">LinkedIn</a>
-            </div>
+    <header id="inicio">
+        <nav>
+            <div class="logo">JG</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Hola, soy <span class="highlight">Juan Garcia</span></h1>
+            <h2>Estudiante de DAM & Desarrollador Full Stack</h2>
+            <p>Creando experiencias digitales con tecnologías modernas.</p>
+            <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
         </div>
     </header>
 
-    <section class="skills container">
-        <h3><span class="icon">🛠</span> Tecnologías</h3>
-        
-        <div class="skills-slider">
-            <div class="skills-track">
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Dart</span>
-                <span class="skill-tag">Flutter</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">Spring Boot</span>
-                <span class="skill-tag">Git</span>
-
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Dart</span>
-                <span class="skill-tag">Flutter</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">Spring Boot</span>
-                <span class="skill-tag">Git</span>
-
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Dart</span>
-                <span class="skill-tag">Flutter</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">Spring Boot</span>
-                <span class="skill-tag">Git</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects container">
-        <h3><span class="icon">🚀</span> Proyectos Destacados</h3>
-        <div class="projects-grid">
+    <section id="sobre-mi">
+        <div class="container">
+            <h3>Sobre Mí</h3>
+            <p class="bio-text">Soy estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma (DAM)</strong>, apasionado por la creación de software eficiente y escalable. Mi enfoque abarca desde el desarrollo móvil con <strong>Flutter</strong> hasta la construcción de backends robustos con <strong>Spring Boot</strong>. Siempre estoy aprendiendo y buscando nuevos desafíos.</p>
             
-            <div class="project-card">
-                <h4>API de Inventario</h4>
-                <p class="tech-stack">Java • Spring Boot • SQL</p>
-                <p>API RESTful desarrollada para la gestión eficiente de inventarios. Incluye operaciones CRUD completas.</p>
-                <div class="card-actions">
-                    <a href="#" class="link">Ver Código en GitHub &rarr;</a>
+            <div class="tech-carousel-container">
+                <div class="tech-carousel">
+                    <!-- Duplicate the list for infinite scroll effect -->
+                    <div class="tech-track">
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">Dart</span>
+                        <span class="tech-item">Flutter</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">SQL</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">Spring Boot</span>
+                        <span class="tech-item">Git</span>
+                        <span class="tech-item">Json</span>
+                        <!-- Duplication -->
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">Dart</span>
+                        <span class="tech-item">Flutter</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">SQL</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">Spring Boot</span>
+                        <span class="tech-item">Git</span>
+                        <span class="tech-item">Json</span>
+                         <!-- Triple Duplication for smoothness on large screens -->
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">Dart</span>
+                        <span class="tech-item">Flutter</span>
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">SQL</span>
+                        <span class="tech-item">MongoDB</span>
+                        <span class="tech-item">Spring Boot</span>
+                        <span class="tech-item">Git</span>
+                        <span class="tech-item">Json</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <h4>Generador de Contraseñas</h4>
-                <p class="tech-stack">Dart • Flutter</p>
-                <p>App móvil multiplataforma para generar contraseñas seguras y aleatorias con UX moderna.</p>
-                <div class="card-actions">
-                    <a href="#" class="link">Ver Proyecto &rarr;</a>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2024 Juan Jesús García. Construido con HTML, CSS y GitHub Pages.</p>
+    <section id="proyectos">
+        <div class="container">
+            <h3>Mis Proyectos Personales</h3>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>Gestor de Tareas Móvil</h4>
+                        <p>Aplicación multiplataforma desarrollada con <strong>Flutter</strong> y <strong>Dart</strong>. Permite a los usuarios organizar sus tareas diarias con sincronización en la nube.</p>
+                        <div class="tags">
+                            <span>Flutter</span><span>Dart</span><span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>API RESTful E-commerce</h4>
+                        <p>Backend robusto construido con <strong>Java</strong> y <strong>Spring Boot</strong>. Gestiona usuarios, productos y pedidos, integrando seguridad con JWT.</p>
+                        <div class="tags">
+                            <span>Java</span><span>Spring Boot</span><span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h4>Analizador de Datos</h4>
+                        <p>Script de automatización en <strong>Python</strong> para procesar grandes volúmenes de datos JSON y almacenarlos en <strong>MongoDB</strong>.</p>
+                        <div class="tags">
+                            <span>Python</span><span>MongoDB</span><span>Json</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto">
+        <div class="container">
+            <p>&copy; 2023 Juan Garcia. Construido para la web.</p>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
