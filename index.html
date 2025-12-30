@@ -16,6 +16,7 @@
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#formacion">Formación</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -24,7 +25,10 @@
             <h1>Hola, soy <span class="highlight">Juan Garcia</span></h1>
             <h2>Estudiante de DAM & Desarrollador Full Stack</h2>
             <p>Creando experiencias digitales con tecnologías modernas.</p>
-            <a href="#proyectos" class="btn">Ver Mis Proyectos</a>
+            <div class="hero-buttons">
+                <a href="#proyectos" class="btn primary">Ver Mis Proyectos</a>
+                <a href="#" class="btn secondary">Descargar CV</a>
+            </div>
         </div>
     </header>
 
@@ -72,6 +76,22 @@
         </div>
     </section>
 
+    <section id="formacion">
+        <div class="container">
+            <h3>Formación Académica</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h4>Técnico Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h4>
+                        <span class="date">2022 - Actualidad</span>
+                        <p>Centro de Estudios Tecnológicos</p>
+                        <p>Focalizado en programación Java, bases de datos SQL/NoSQL, desarrollo de interfaces y sistemas de gestión empresarial.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="proyectos">
         <div class="container">
             <h3>Mis Proyectos Personales</h3>
@@ -84,6 +104,10 @@
                         <div class="tags">
                             <span>Flutter</span><span>Dart</span><span>Firebase</span>
                         </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">Ver Código</a>
+                            <a href="#" class="btn-small">Demo Live</a>
+                        </div>
                     </div>
                 </div>
                 <!-- Project 2 -->
@@ -93,6 +117,10 @@
                         <p>Backend robusto construido con <strong>Java</strong> y <strong>Spring Boot</strong>. Gestiona usuarios, productos y pedidos, integrando seguridad con JWT.</p>
                         <div class="tags">
                             <span>Java</span><span>Spring Boot</span><span>SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">Ver Código</a>
+                            <a href="#" class="btn-small">Documentación</a>
                         </div>
                     </div>
                 </div>
@@ -104,6 +132,9 @@
                         <div class="tags">
                             <span>Python</span><span>MongoDB</span><span>Json</span>
                         </div>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">Ver Código</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,7 +143,14 @@
 
     <footer id="contacto">
         <div class="container">
-            <p>&copy; 2023 Juan Garcia. Construido para la web.</p>
+            <h3>¿Hablamos?</h3>
+            <p>Estoy disponible para nuevas oportunidades y colaboraciones.</p>
+            <div class="social-links">
+                <a href="mailto:juan@email.com" class="social-btn">Email</a>
+                <a href="https://linkedin.com" target="_blank" class="social-btn">LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="social-btn">GitHub</a>
+            </div>
+            <p class="copyright">&copy; 2023 Juan Garcia. Construido para la web.</p>
         </div>
     </footer>
 
